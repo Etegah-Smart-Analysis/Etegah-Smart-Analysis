@@ -1,84 +1,263 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>منصة اتجاه التحليل الذكي</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>اتجاه التحليل الذكي | Etegah Smart Analysis</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#07111f;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#081423;
+border-bottom:1px solid #13304e;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:70px;
+}
+
+.logo h2{
+font-size:24px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-size:17px;
+}
+
+nav a:hover{
+color:#00d2ff;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero img{
+width:180px;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:24px;
+color:#c2d8ee;
+margin-bottom:35px;
+}
+
+.buttons a{
+display:inline-block;
+padding:15px 35px;
+margin:10px;
+border-radius:10px;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+.btn1{
+background:#00d2ff;
+color:black;
+}
+
+.btn2{
+border:2px solid #00d2ff;
+color:#00d2ff;
+}
+
+.services{
+padding:80px 8%;
+text-align:center;
+}
+
+.services h2{
+font-size:40px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#0c1d31;
+padding:35px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#00d2ff;
+}
+
+.stats{
+padding:80px 8%;
+background:#081423;
+text-align:center;
+}
+
+.numbers{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.num h2{
+font-size:50px;
+color:#00d2ff;
+}
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid #13304e;
+}
+
+</style>
+
 </head>
 <body>
 
-<div class="container">
-  <header>
-    <span>منصة اتجاه التحليل الذكي</span>
-    <nav>
-      <a href="#features">مميزاتنا</a>
-      <a href="#benefits">الفوائد</a>
-      <a href="#disclaimer">إخلاء المسؤولية</a>
-      <a href="#terms">الشروط والأحكام</a>
-    </nav>
-  </header>
+<header>
 
-  <main>
-    <div class="banner">
-      <h1>مرحباً بك في منصة اتجاه التحليل الذكي</h1>
-      <p>منصة ذكية لمتابعة الأسهم السعودية بشكل احترافي</p>
-    </div>
-
-    <section id="features">
-      <h2>🚀 مميزاتنا</h2>
-      <div class="box">🔍 تحديد أفضل الأسهم للشراء والبيع</div>
-      <div class="box">⚡ إشارات واضحة لاتخاذ القرار</div>
-      <div class="box">📊 تطبيق عملي للاستراتيجيات الفنية</div>
-      <div class="box">🖥️ واجهة سهلة الاستخدام</div>
-    </section>
-
-    <section id="benefits">
-      <h2>🎯 الفوائد</h2>
-      <div class="box">اختيار السهم المناسب بناءً على إشارات فنية</div>
-      <div class="box">رؤية أوضح لحركة السوق</div>
-      <div class="box">توفير الوقت والجهد في التحليل</div>
-    </section>
-
-    <!-- إخلاء المسؤولية -->
-    <section id="disclaimer">
-      <h2 onclick="toggleSection('disclaimer-content')">⚠️ إخلاء المسؤولية (اضغط للعرض)</h2>
-      <div id="disclaimer-content" class="hidden animated">
-        <div class="box">التحليلات المقدمة هي وجهة نظر فنية</div>
-        <div class="box">لا نقدم توصيات شراء أو بيع</div>
-        <div class="box">قرار الاستثمار مسؤولية العميل</div>
-      </div>
-    </section>
-
-    <!-- الشروط والأحكام -->
-    <section id="terms">
-      <h2 onclick="toggleSection('terms-content')">📜 الشروط والأحكام (اضغط للعرض)</h2>
-      <div id="terms-content" class="hidden animated">
-        <div class="box">الاستخدام للأغراض التعليمية والفنية فقط</div>
-        <div class="box">الإشارات ليست توصيات استثمارية</div>
-        <div class="box">لسنا مسؤولين عن أي خسائر</div>
-        <div class="box">يلتزم العميل بالقوانين المحلية</div>
-        <div class="box">الوصول للأدوات دون ضمانات</div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 اتجاه التحليل الذكي. جميع الحقوق محفوظة.</p>
-  </footer>
+<div class="logo">
+<img src="logo.png">
+<h2>اتجاه التحليل الذكي</h2>
 </div>
 
-<script>
-function toggleSection(id) {
-  const section = document.getElementById(id);
-  if (section.classList.contains("hidden")) {
-    section.classList.remove("hidden");
-    setTimeout(() => section.classList.add("show"), 50);
-  } else {
-    section.classList.remove("show");
-    setTimeout(() => section.classList.add("hidden"), 600);
-  }
-}
-</script>
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#">الخدمات</a>
+<a href="#">التحليلات</a>
+<a href="#">التوصيات</a>
+<a href="#">الأخبار</a>
+<a href="#">تواصل</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<img src="logo.png">
+
+<h1>نحو قرارات أدق... برؤية أعمق</h1>
+
+<p>
+منصة احترافية للتحليل الفني والتوصيات الذكية للأسواق المالية
+</p>
+
+<div class="buttons">
+<a href="#" class="btn1">ابدأ مجاناً</a>
+<a href="#" class="btn2">دخول كزائر</a>
+</div>
+
+</section>
+
+
+<section class="services">
+
+<h2>خدماتنا</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📊 التحليل الفني</h3>
+<p>تحليلات دقيقة ومحدثة لحظياً</p>
+</div>
+
+<div class="card">
+<h3>🤖 ذكاء اصطناعي</h3>
+<p>تنبيهات وفرص تداول ذكية</p>
+</div>
+
+<div class="card">
+<h3>📈 دعوم ومقاومات</h3>
+<p>تحديد مناطق الدخول والخروج</p>
+</div>
+
+<div class="card">
+<h3>🔔 إشعارات فورية</h3>
+<p>تنبيهات مباشرة على مدار الساعة</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="stats">
+
+<div class="numbers">
+
+<div class="num">
+<h2>95%</h2>
+<p>دقة التحليل</p>
+</div>
+
+<div class="num">
+<h2>1000+</h2>
+<p>تحليل</p>
+</div>
+
+<div class="num">
+<h2>500+</h2>
+<p>عميل</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+© 2026 اتجاه التحليل الذكي - جميع الحقوق محفوظة
+</footer>
 
 </body>
 </html>
