@@ -1,19 +1,19 @@
 body {
   font-family: "Tahoma", Arial, sans-serif;
   margin:0; padding:0;
-  background: linear-gradient(135deg, #004d40, #00c853);
+  background:#add8e6; /* لبني */
   color:#333;
   background-image: url('logo.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 250px;
+  background-size: 400px; /* العلامة المائية واضحة */
 }
 
 .container {
   max-width: 900px;
   margin: auto;
   text-align: center;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.85);
   padding: 20px;
   border-radius: 12px;
 }
@@ -30,28 +30,13 @@ nav a {
 }
 
 .banner {
-  display:flex; justify-content:flex-end;
-  align-items:center; height:250px;
-}
-
-.banner-text {
-  text-align:right; max-width:400px;
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+  height:200px;
 }
 
 .banner h1 { font-size:26px; margin-bottom:10px; color:#004d40; }
 .banner p { font-size:16px; margin-bottom:15px; }
-.banner button {
-  background:#00c853; border:none;
-  padding:10px 20px; font-size:14px;
-  color:#fff; cursor:pointer; border-radius:6px;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
 
 section { margin:30px 0; }
 section h2 { cursor:pointer; color:#004d40; }
