@@ -7,67 +7,83 @@
 </head>
 <body>
 
-<header>
-  <div class="header-content">
-    <img src="logo.png" alt="اتجاه التحليل الذكي" class="logo">
-    <span>منصة اتجاه التحليل الذكي</span>
-  </div>
-  <nav>
-    <a href="#features">مميزاتنا</a>
-    <a href="#benefits">الفوائد</a>
-    <a href="#disclaimer">إخلاء المسؤولية</a>
-    <a href="#terms">الشروط والأحكام</a>
-  </nav>
-</header>
+<div class="container">
+  <header>
+    <div class="header-content">
+      <span>منصة اتجاه التحليل الذكي</span>
+    </div>
+    <nav>
+      <a href="#features">مميزاتنا</a>
+      <a href="#benefits">الفوائد</a>
+      <a href="#disclaimer">إخلاء المسؤولية</a>
+      <a href="#terms">الشروط والأحكام</a>
+    </nav>
+  </header>
 
-<div class="banner">
-  <h1>مرحباً بك في منصة اتجاه التحليل الذكي</h1>
-  <p>منصة ذكية لمتابعة الأسهم السعودية بشكل احترافي</p>
-  <button>تعرّف أكثر</button>
+  <main>
+    <div class="banner">
+      <div class="banner-text">
+        <h1>مرحباً بك في منصة اتجاه التحليل الذكي</h1>
+        <p>منصة ذكية لمتابعة الأسهم السعودية بشكل احترافي</p>
+        <button>تعرّف أكثر</button>
+      </div>
+    </div>
+
+    <section id="features">
+      <h2>🚀 مميزاتنا</h2>
+      <div class="box">🔍 تحديد أفضل الأسهم للشراء والبيع</div>
+      <div class="box">⚡ إشارات واضحة لاتخاذ القرار</div>
+      <div class="box">📊 تطبيق عملي للاستراتيجيات الفنية</div>
+      <div class="box">🖥️ واجهة سهلة الاستخدام</div>
+    </section>
+
+    <section id="benefits">
+      <h2>🎯 الفوائد</h2>
+      <div class="box">اختيار السهم المناسب بناءً على إشارات فنية</div>
+      <div class="box">رؤية أوضح لحركة السوق</div>
+      <div class="box">توفير الوقت والجهد في التحليل</div>
+    </section>
+
+    <!-- إخلاء المسؤولية -->
+    <section id="disclaimer">
+      <h2 onclick="toggleSection('disclaimer-content')">⚠️ إخلاء المسؤولية (اضغط للعرض)</h2>
+      <div id="disclaimer-content" class="hidden animated">
+        <div class="box">التحليلات المقدمة هي وجهة نظر فنية</div>
+        <div class="box">لا نقدم توصيات شراء أو بيع</div>
+        <div class="box">قرار الاستثمار مسؤولية العميل</div>
+      </div>
+    </section>
+
+    <!-- الشروط والأحكام -->
+    <section id="terms">
+      <h2 onclick="toggleSection('terms-content')">📜 الشروط والأحكام (اضغط للعرض)</h2>
+      <div id="terms-content" class="hidden animated">
+        <div class="box">الاستخدام للأغراض التعليمية والفنية فقط</div>
+        <div class="box">الإشارات ليست توصيات استثمارية</div>
+        <div class="box">لسنا مسؤولين عن أي خسائر</div>
+        <div class="box">يلتزم العميل بالقوانين المحلية</div>
+        <div class="box">الوصول للأدوات دون ضمانات</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 اتجاه التحليل الذكي. جميع الحقوق محفوظة.</p>
+  </footer>
 </div>
 
-<section id="features">
-  <h2>🚀 مميزاتنا</h2>
-  <div class="features">
-    <div class="box">🔍 تحديد أفضل الأسهم للشراء والبيع</div>
-    <div class="box">⚡ إشارات واضحة لاتخاذ القرار</div>
-    <div class="box">📊 تطبيق عملي للاستراتيجيات الفنية</div>
-    <div class="box">🖥️ واجهة سهلة الاستخدام</div>
-  </div>
-</section>
-
-<section id="benefits">
-  <h2>🎯 الفوائد</h2>
-  <div class="benefits">
-    <div class="box">اختيار السهم المناسب بناءً على إشارات فنية</div>
-    <div class="box">رؤية أوضح لحركة السوق</div>
-    <div class="box">توفير الوقت والجهد في التحليل</div>
-  </div>
-</section>
-
-<section id="disclaimer">
-  <h2>⚠️ إخلاء المسؤولية</h2>
-  <div class="disclaimer">
-    <div class="box">التحليلات المقدمة هي وجهة نظر فنية</div>
-    <div class="box">لا نقدم توصيات شراء أو بيع</div>
-    <div class="box">قرار الاستثمار مسؤولية العميل</div>
-  </div>
-</section>
-
-<section id="terms">
-  <h2>📜 الشروط والأحكام</h2>
-  <div class="terms">
-    <div class="box">الاستخدام للأغراض التعليمية والفنية فقط</div>
-    <div class="box">الإشارات ليست توصيات استثمارية</div>
-    <div class="box">لسنا مسؤولين عن أي خسائر</div>
-    <div class="box">يلتزم العميل بالقوانين المحلية</div>
-    <div class="box">الوصول للأدوات دون ضمانات</div>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 اتجاه التحليل الذكي. جميع الحقوق محفوظة.</p>
-</footer>
+<script>
+function toggleSection(id) {
+  const section = document.getElementById(id);
+  if (section.classList.contains("hidden")) {
+    section.classList.remove("hidden");
+    setTimeout(() => section.classList.add("show"), 50);
+  } else {
+    section.classList.remove("show");
+    setTimeout(() => section.classList.add("hidden"), 600);
+  }
+}
+</script>
 
 </body>
 </html>
