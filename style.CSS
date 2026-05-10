@@ -1,54 +1,82 @@
 body {
   font-family: "Tahoma", Arial, sans-serif;
   margin:0; padding:0;
-  background:#f9f9f9; color:#333;
+  background: linear-gradient(135deg, #004d40, #00c853);
+  color:#333;
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 12px;
 }
 
 header {
   background:#004d40; color:#fff;
-  padding:20px; display:flex;
+  padding:15px; display:flex;
   justify-content:space-between; align-items:center;
+  border-radius: 8px;
 }
-
-.logo { height:60px; margin-left:10px; }
 
 nav a {
   color:#fff; margin:0 10px; text-decoration:none;
 }
 
 .banner {
-  background:url('logo.png') center/contain no-repeat; /* اللوجو كخلفية */
-  text-align:center; padding:120px 20px; color:#004d40;
+  display:flex; justify-content:flex-end;
+  align-items:center; height:250px;
 }
 
-.banner h1 { font-size:40px; margin-bottom:15px; }
-.banner p { font-size:22px; margin-bottom:25px; }
+.banner-text {
+  text-align:right; max-width:400px;
+}
+
+.banner h1 { font-size:26px; margin-bottom:10px; color:#004d40; }
+.banner p { font-size:16px; margin-bottom:15px; }
 .banner button {
   background:#00c853; border:none;
-  padding:15px 30px; font-size:18px;
+  padding:10px 20px; font-size:14px;
   color:#fff; cursor:pointer; border-radius:6px;
+  animation: pulse 2s infinite;
 }
 
-section {
-  padding:40px 20px; text-align:center;
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
-section h2 {
-  color:#004d40; margin-bottom:20px;
-}
-
-.features, .benefits, .disclaimer, .terms {
-  display:flex; flex-wrap:wrap;
-  justify-content:center; gap:20px;
-}
+section { margin:30px 0; }
+section h2 { cursor:pointer; color:#004d40; }
 
 .box {
   background:#fff; border:1px solid #ddd;
-  border-radius:8px; padding:20px; width:250px;
-  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  border-radius:8px; padding:15px; margin:10px auto;
+  width:70%; box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hidden { display:none; }
+
+.animated {
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.animated.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 footer {
   background:#004d40; color:#fff;
-  text-align:center; padding:20px; margin-top:40px;
+  text-align:center; padding:15px;
+  border-radius: 8px;
 }
