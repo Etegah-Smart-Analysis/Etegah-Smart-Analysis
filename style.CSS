@@ -1,5 +1,5 @@
 body {
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: "Tahoma", Arial, sans-serif;
   margin:0; padding:0;
   background:#f9f9f9; color:#333;
 }
@@ -10,21 +10,45 @@ header {
   justify-content:space-between; align-items:center;
 }
 
-.logo { height:50px; margin-left:10px; }
+.logo { height:60px; margin-left:10px; }
 
 nav a {
   color:#fff; margin:0 10px; text-decoration:none;
 }
 
 .banner {
-  background:url('banner.jpg') center/cover no-repeat;
-  text-align:center; padding:80px 20px; color:#fff;
+  background:url('logo.png') center/contain no-repeat; /* اللوجو كخلفية */
+  text-align:center; padding:120px 20px; color:#004d40;
 }
 
-.banner h1 { font-size:36px; margin-bottom:10px; }
-.banner p { font-size:20px; margin-bottom:20px; }
+.banner h1 { font-size:40px; margin-bottom:15px; }
+.banner p { font-size:22px; margin-bottom:25px; }
 .banner button {
   background:#00c853; border:none;
   padding:15px 30px; font-size:18px;
-  color:#fff; cursor:pointer;
+  color:#fff; cursor:pointer; border-radius:6px;
+}
+
+section {
+  padding:40px 20px; text-align:center;
+}
+
+section h2 {
+  color:#004d40; margin-bottom:20px;
+}
+
+.features, .benefits, .disclaimer, .terms {
+  display:flex; flex-wrap:wrap;
+  justify-content:center; gap:20px;
+}
+
+.box {
+  background:#fff; border:1px solid #ddd;
+  border-radius:8px; padding:20px; width:250px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background:#004d40; color:#fff;
+  text-align:center; padding:20px; margin-top:40px;
 }
